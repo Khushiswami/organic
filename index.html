@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Lobster&family=Playfair+Display:wght@700&family=Rubik&display=swap"
+    rel="stylesheet">
+  
+  <title>Hello, world!</title>
+  <style>
+  	*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+    color: black;
+    font-family: 'Lobster', cursive;
+}
+
+.navbar-brand:hover{
+    color: black;
+}
+
+.nav-link{
+    margin-right: 10px;
+    margin-left: 10px;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+}
+.nav-link:hover{
+    color: black;
+}
+.search{
+    height: 40px;
+    width: 80%;
+    border-radius: 60px;
+    outline: none;
+    margin-right: -35px;
+    font-family: 'Rubik', sans-serif;
+    border: 2px solid rgb(248, 26, 92);
+}
+.btn0{
+    height: 40px;
+    width: 40%;
+    outline: none;
+    border: none;
+    background: rgb(248, 26, 92);
+    color: white;
+    border-radius: 60px;
+    font-weight: 700;
+}
+.main{
+   background-image: url(https://img.freepik.com/free-photo/fresh-colourful-ingredients-mexican-cuisine_23-2148254294.jpg?w=1380&t=st=1652623964~exp=1652624564~hmac=b7689be0eb58b5e521a24d3290bd95849b37674076eaf793d0a07aa3e119e7c8);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.main h1{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.btn1{
+    height: 45px;
+    width: 35%;
+    border: none;
+    outline: none;
+    background-color: rgb(248, 26, 92);
+    color: white;
+    font-weight: 700;
+    border-radius: 60px;
+}
+.btn1{
+    background-color: rgb(248, 26, 92);
+    transition: 0.5s;
+}
+h1{
+    font-weight: 700;
+}
+.card:hover{
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+transition: 0.5s;
+}
+.apple{
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(https://images.fineartamerica.com/images-medium-large-5/girl-biting-apple-science-photo-library.jpg);
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+
+}
+.apple h1{
+    font-family: 'Lobster', cursive;
+}
+
+.news{
+    background-color: black;
+    color: white;
+}
+
+.btn2{
+    height: 45px;
+    width: 100px;
+    background: white;
+    margin-left: -10px;
+    border: 2px solid white;
+    font-weight: 600;
+}
+.img-organic{
+    height: 60%;
+    width: 100%;
+}
+.news input{
+    height: 45px;
+    width: 55%;
+    border: 2px solid white;
+    outline: none;
+    background: black;
+    color: white;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.news::placeholder{
+    color: white;
+}
+
+.news p{
+    margin: 0%;
+}
+.food-img{
+    width: 100%;
+    height: 210px;
+}
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">Organic</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav m-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Trending</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Store
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Organic</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="px-2 search" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn0" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <section class="main">
+    <div class="container py-5">
+      <div class="row py-4">
+        <div class="col-lg-7 pt-5 text-center">
+          <h1 class="pt-5">Nature has always cared for us !</h1>
+          <button class="btn1 mt-3">More Tips</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="new">
+    <div class="container py-5">
+      <div class="row pt-5">
+        <div class="col-lg-7 m-auto">
+          <div class="row text-center">
+            <div class="col-lg-4">
+              <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_600,h_400/https://www.myfreshco.com/wp-content/uploads/2020/07/Green-Grapes.jpg" class="img-fluid">
+              <h6>NATURAL</h6>
+            </div>
+            <div class="col-lg-4">
+              <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_600,h_400/https://www.myfreshco.com/wp-content/uploads/2020/07/Green-Grapes.jpg" class="img-fluid">
+              <h6>NATURAL</h6>
+            </div>
+            <div class="col-lg-4">
+              <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_600,h_400/https://www.myfreshco.com/wp-content/uploads/2020/07/Green-Grapes.jpg" class="img-fluid">
+              <h6>NATURAL</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product">
+    <div class="container py-5">
+      <div class="row py-5">
+        <div class="col-lg-5 m-auto text-center">
+          <h1>What's Trending</h1>
+          <h6 style="color: red;">Be healthy Organic food</h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="https://m.media-amazon.com/images/I/610t0cXC6TL._SL1280_.jpg" class="img-fluid">
+            </div>
+          </div>
+          <h6>Energy Food</h6>
+          <p>$39.99</p>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="https://m.media-amazon.com/images/I/61cWUL-NauL._SL1280_.jpg" class="img-fluid">
+            </div>
+          </div>
+          <h6>Energy Food</h6>
+          <p>$39.99</p>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="https://m.media-amazon.com/images/I/610t0cXC6TL._SL1280_.jpg" class="img-fluid">
+            </div>
+          </div>
+          <h6>Energy Food</h6>
+          <p>$39.99</p>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="https://m.media-amazon.com/images/I/61cWUL-NauL._SL1280_.jpg" class="img-fluid">
+            </div>
+          </div>
+          <h6>Energy Food</h6>
+          <p>$39.99</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 text-center m-auto">
+          <button class="btn1" id="krishu">Click For More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container py-5">
+      <div class="row py-5">
+        <div class="col-lg-8 m-auto text-center">
+          <h1>Welcome to Our Organic Food Society</h1>
+          <h6 style="color: red;">Be healthy Organic food</h6>
+        </div>
+        <div class="row py-5">
+          <div class="col-lg-4">
+            <img  class="img-organic" src="https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX12122672.jpg" class="img-fluid mb-3" class="img-fluid mb-3">
+            <h5>best quality product</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipis alit.
+              magni blanditiss dolorem odit. low eos atque ipsum doloro odio nesciunt!</p>
+          </div>
+          <div class="col-lg-4">
+            <img class="img-organic" src="https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX12122672.jpg" class="img-fluid mb-3">
+            <h5>best quality product</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipis alit.
+              magni blanditiss dolorem odit. low eos atque ipsum doloro odio nesciunt!</p>
+          </div>
+          <div class="col-lg-4">
+            <img class="img-organic" src="https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX12122672.jpg" class="img-fluid mb-3" class="img-fluid mb-3">
+            <h5>best quality product</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipis alit.
+              magni blanditiss dolorem odit. low eos atque ipsum doloro odio nesciunt!</p>
+          </div>
+        </div>
+
+        <div class="row pt-3">
+          <div class="col-lg-6 text-center m-auto">
+            <button class="btn1">Shop More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="shop">
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-lg-8 m-auto text-center">
+          <h1>Explore Our Store</h1>
+          <h6 style="color: red;">pick your product from our store</h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img class="food-img" src="https://m.media-amazon.com/images/I/81dpDHc95AL._SY679_PIbundle-24,TopRight,0,0_SX501SY679SH20_.jpg" class="img-fluid">
+            </div>
+          </div>
+          <h6>Energy Food</h6>
+          <p>$39.99</p>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img  class="food-img" src="https://rukminim2.flixcart.com/image/416/416/kox8b680/ready-meal/g/6/h/vegetable-upma-mtr-original-imag39rtqhbhxhjh.jpeg?q=70" class="img-fluid">
+            </div>
+          </div>
+          <h6>Energy Food</h6>
+          <p>$39.99</p>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img class="food-img" src="https://i0.wp.com/shop.mylittlemoppet.com/wp-content/uploads/2016/05/63-Energy-Nutri-Mix-200-g-8cm-X-11-cm-Product-Pic_1-1.jpg?fit=1000%2C1000&ssl=1" class="img-fluid">
+            </div>
+          </div>
+          <h6>Energy Food</h6>
+          <p>$39.99</p>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img class="food-img" src="https://m.media-amazon.com/images/I/81dpDHc95AL._SY679_PIbundle-24,TopRight,0,0_SX501SY679SH20_.jpg" class="img-fluid">
+            </div>
+          </div>
+          <h6>Energy Food</h6>
+          <p>$39.99</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img class="food-img" src="https://4.imimg.com/data4/OG/UR/MY-24921423/maccroni-500-gm-500x500.jpg" class="img-fluid">
+            </div>
+          </div>
+          <h6>Energy Food</h6>
+          <p>$39.99</p>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img class="food-img" src="http://cdn.shopify.com/s/files/1/0555/1895/3557/products/3319844_grande.jpg?v=1645367573" class="img-fluid">
+            </div>
+          </div>
+          <h6>Energy Food</h6>
+          <p>$39.99</p>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img class="food-img" src="https://tiimg.tistatic.com/fp/1/006/228/knorr-soupy-noodles-207.jpg" class="img-fluid">
+            </div>
+          </div>
+          <h6>Energy Food</h6>
+          <p>$39.99</p>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img class="food-img" src="https://everyproducts.com.pk/image/cache/catalog/EPSERVER/HOMEBAKING/MEGGI/KNORR%20NOODLES%20CHICKEN,%2066G%2045-280x280.jpg" class="img-fluid">
+            </div>
+          </div>
+          <h6>Energy Food</h6>
+          <p>$39.99</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img class="food-img" src="https://cpimg.tistatic.com/04733224/b/4/Lime-n-Chilli-Spicy-Sev.jpg" class="img-fluid">
+            </div>
+          </div>
+          <h6>Energy Food</h6>
+          <p>$39.99</p>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img class="food-img" src="https://m.media-amazon.com/images/I/71GEcize7eL._SL1265_.jpg" class="img-fluid">
+            </div>
+          </div>
+          <h6>Energy Food</h6>
+          <p>$39.99</p>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img class="food-img" src="https://5.imimg.com/data5/AT/RF/EU/SELLER-95280623/haldiram-ratlami-sev-500x500.jpg" class="img-fluid">
+            </div>
+          </div>
+          <h6>Energy Food</h6>
+          <p>$39.99</p>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img class="food-img" src="https://www.jiomart.com/images/product/original/491551679/snac-tac-elbow-macaroni-pasta-900-g-product-images-o491551679-p491551679-0-202203150039.jpg" class="img-fluid">
+            </div>
+          </div>
+          <h6>Energy Food</h6>
+          <p>$39.99</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="apple py-5">
+    <div class="container text-white py-5">
+      <div class="row py-5">
+        <div class="col-lg-6">
+          <h1 class="font-weight-bold py-3">unlock your potentail with good nutrion</h1>
+          <h6>Be healthy Organic food</h6>
+          <button class="btn1 mt-3">More Form Us</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container mt-5 text-center">
+      <h2>LOGIN FORM</h2>
+      <div>   
+        <div class="mt-3">
+          <input type="text" class="form-control" name="user" id="user" placeholder="enter name"> 
+        </div>
+        <div class="mt-3">
+          <input type="password" class="form-control" name="pass" id="paas" placeholder="Enter password">
+        </div>
+        <div>
+        <button class="btn1 mt-3">Submit</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <section class="news py-5">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-9 m-auto text-center">
+            <h1>Join Our Secret Society</h1>
+            <input type="text" placeholder="enter your email" class="px-3">
+            <button class="btn2">Submit</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-11">
+            <div class="row">
+              <div class="col-3 py-3">
+                <h5>CUSTOMRE CARE</h5>
+                <p>regular</p>
+                <p>on time</p>
+                <p>always care</p>
+              </div>
+              <div class="col-3 py-3">
+                <h5>CUSTOMRE CARE</h5>
+                <p>regular</p>
+                <p>on time</p>
+                <p>always care</p>
+              </div>
+              <div class="col-3 py-3">
+                <h5>CUSTOMRE CARE</h5>
+                <p>regular</p>
+                <p>on time</p>
+                <p>always care</p>
+              </div>
+              <div class="col-3 py-3">
+                <h5>CUSTOMRE CARE</h5>
+                <p>regular</p>
+                <p>on time</p>
+                <p>always care</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+</body>
+
+</html>
